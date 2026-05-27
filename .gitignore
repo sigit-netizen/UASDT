@@ -1,0 +1,17 @@
+# Abaikan dataset asli yang ukurannya besar
+P1/dataset/air_pollution_china.csv
+P2/dataset/US_Accidents_March23.csv
+
+# Abaikan file-file CSV tambahan yang mungkin ada di root folder dataset
+P1/dataset/*.csv
+P2/dataset/*.csv
+
+# Abaikan HANYA file train dan test (folder "data" tetap di-track oleh git)
+P1/dataset/data/train.csv
+P1/dataset/data/test.csv
+P2/dataset/data/train.csv
+P2/dataset/data/test.csv
+
+# Aturan umum lainnya untuk Python
+__pycache__/
+*.pyc
