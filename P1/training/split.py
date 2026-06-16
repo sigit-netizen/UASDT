@@ -9,6 +9,7 @@ def binarize_severity(severity):
 def main():
     csv_path = '../dataset/US_Accidents_March23.csv'
     output_dir = '../dataset/data'
+
     os.makedirs(output_dir, exist_ok=True)
 
     train_path = os.path.join(output_dir, 'train.csv')
