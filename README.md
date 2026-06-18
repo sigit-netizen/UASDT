@@ -13,10 +13,10 @@
 
 ---
 
-### Proyek 2 (P2): Analisis Polusi Udara China(https://www.kaggle.com/datasets/khushikyad001/air-pollution-in-china-2015-2025)
+### Proyek 2 (P2): Data Historis Bitcoin(https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)
 * **Dataset Asli (Raw Data)**
-  Pastikan Anda meletakkan file `air_pollution_china.csv` di dalam lokasi berikut:
-  `P1/dataset/air_pollution_china.csv`
+  Pastikan Anda meletakkan file `Data Historis Bitcoin` di dalam lokasi berikut:
+  `P1/dataset/Data Historis Bitcoin`
 * **Data Hasil Split (Train/Test)**
   Folder penyimpanannya ada di: `P1/dataset/data/`.
   File hasil split (`train.csv` dan `test.csv`) akan otomatis muncul di folder ini setelah Anda menjalankan script `split.py`.
