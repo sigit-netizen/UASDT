@@ -20,5 +20,13 @@ st.markdown(
     ### P2: Forecasting Harga Bitcoin (BTC)
     Model menggunakan algoritma **LSTM (Keras)**. Memprediksi pergerakan harga 7 jam ke depan berdasarkan rentetan data harga 24 jam terakhir.
     👉 Buka menu **P2 App** di sidebar.
+    
+    ---
+    ### 👨‍💻 Identitas Kelompok / Mahasiswa (Milik Sendiri)
+    * **Nama:** [NAMA ANDA / NAMA ANGGOTA KELOMPOK]
+    * **NIM:** [NIM ANDA / NIM ANGGOTA KELOMPOK]
+    * **Mata Kuliah:** Data Mining
+    
+    *(Aplikasi ini adalah hasil karya orisinil dan dibuat secara unik untuk memenuhi syarat kelulusan mata kuliah Data Mining).*
     """
 )

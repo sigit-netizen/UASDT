@@ -6,9 +6,9 @@
 ### Proyek 1 (P1): US Accidents March 2023(https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 * **Dataset Asli (Raw Data)**
   Pastikan Anda meletakkan file `US_Accidents_March23.csv` (berukuran ~3GB) di dalam lokasi berikut:
-  `P2/dataset/US_Accidents_March23.csv`
+  `P1/dataset/US_Accidents_March23.csv`
 * **Data Hasil Split (Train/Test)**
-  Folder penyimpanannya ada di: `P2/dataset/data/`.
+  Folder penyimpanannya ada di: `P1/dataset/data/`.
   File hasil split (`train.csv` dan `test.csv`) akan otomatis muncul di folder ini setelah Anda menjalankan script `split.py`.
 
 ---
@@ -16,7 +16,7 @@
 ### Proyek 2 (P2): Data Historis Bitcoin(https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)
 * **Dataset Asli (Raw Data)**
   Pastikan Anda meletakkan file `Data Historis Bitcoin` di dalam lokasi berikut:
-  `P1/dataset/Data Historis Bitcoin`
+  `P2/dataset/Data Historis Bitcoin`
 * **Data Hasil Split (Train/Test)**
   Folder penyimpanannya ada di: `P1/dataset/data/`.
   File hasil split (`train.csv` dan `test.csv`) akan otomatis muncul di folder ini setelah Anda menjalankan script `split.py`.

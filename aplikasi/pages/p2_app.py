@@ -55,7 +55,7 @@ def get_mt5_data(symbol, target_date, target_time):
 
 
 def run_lstm_prediction(prices, model, scaler):
-    """Menebak harga 7 jam ke depan menggunakan AI LSTM"""
+    """Menebak harga 7 jam ke depan menggunakan AI LSTM (Seq2Seq)"""
     # 1. Sesuaikan skala angka (Preprocessing) agar ramah untuk AI
     input_array = np.array(prices).reshape(-1, 1)
     scaled_input = scaler.transform(input_array)
@@ -63,19 +63,9 @@ def run_lstm_prediction(prices, model, scaler):
     # 2. Ubah ke bentuk matriks 3 Dimensi untuk LSTM: (batch=1, time_steps=24, features=1)
     current_batch = scaled_input.reshape(1, 24, 1) 
     
-    forecast_list = []
-    
-    # 3. Lakukan perulangan tebakan untuk 7 jam ke depan
-    for _ in range(7):
-        # AI Menebak 1 angka ke depan
-        pred = model.predict(current_batch, verbose=0)
-        pred_scalar = float(pred.flatten()[0])
-        forecast_list.append(pred_scalar)
-        
-        # Masukkan hasil tebakan baru ini ke ujung gerbong antrean, 
-        # sekaligus membuang 1 data terlama di awal antrean (Teknik Sliding Window)
-        new_step = np.array([[[pred_scalar]]])
-        current_batch = np.append(current_batch[:, 1:, :], new_step, axis=1)
+    # 3. AI Langsung menebak 7 angka sekaligus dalam 1 kali proses (Sequence-to-Sequence)
+    pred = model.predict(current_batch, verbose=0)
+    forecast_list = pred.flatten()
         
     # 4. Kembalikan angka tebakan ke skala Dolar aslinya
     return scaler.inverse_transform(np.array(forecast_list).reshape(-1, 1)).flatten()
