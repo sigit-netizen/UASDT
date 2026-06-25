@@ -32,7 +32,7 @@ st.markdown(
     <div style='text-align: center; color: gray;'>
     <small><i>Aplikasi ini adalah hasil karya orisinil dan dibuat secara unik untuk memenuhi syarat UAS mata kuliah Data Mining.</i></small><br>
     <small><b>Identitas:</b></small>
-    <br><small>Faizin Hilal: 2313020014</small><br><small>Mohammad Rizky Andi Putra: 2313020229</small><br><small>Sigit: 2313020027</small><br><small>
+    <br><small>Faizin Hilal: 2313020024</small><br><small>Mohammad Rizky Andi Putra: 2313020229</small><br><small>Sigit: 2313020027</small><br><small>
     </div>
     """,
     unsafe_allow_html=True
